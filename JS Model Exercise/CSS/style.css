@@ -15,25 +15,26 @@ body {
 #top-title {
   background: #fff;
   border-radius: 10px;
-  max-width: 100%;
+  max-width: 20%;
   margin: 20px auto;
   text-align: center;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: 5px;
 }
 
 #principal-section {
   background: #fff;
   border-radius: 10px;
-  max-width: 100%;
+  max-width: 35%;
   margin: 20px auto;
   text-align: center;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
-  padding: 20px;
+  padding: 10px;
 }
 
 footer {
   text-align: center;
   color: #fff;
-  font-style: italic;
 }
+
+

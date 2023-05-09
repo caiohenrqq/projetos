@@ -31,4 +31,23 @@ function loading() { // Define uma função chamada loading
       document.body.style.backgroundColor = "#1976d2"; // Define a cor de fundo do corpo do documento como azul escuro
     }
   }
+
+  function updateTime() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+  
+    // Adiciona um zero na frente dos números menores que 10
+    hours = (hours < 10 ? "0" : "") + hours;
+    minutes = (minutes < 10 ? "0" : "") + minutes;
+    seconds = (seconds < 10 ? "0" : "") + seconds;
+  
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById('current-time').textContent = timeString;
+  }
+  
+  // Atualize a hora a cada segundo
+  setInterval(updateTime, 1000);
+  
   
